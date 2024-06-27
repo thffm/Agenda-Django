@@ -7,12 +7,12 @@ from contact import models
 # Register your models here.
 @admin.register(models.Contact)
 class ContacAdmin(admin.ModelAdmin):
-    list_display = 'id','frist_name','last','phone','picture','show','category',
+    list_display = 'id','frist_name','last','phone','picture','show','category','show'
     ordering= 'id',
     search_fields = 'id','frist_name','last',
     list_per_page = 25
     list_max_show_all = 10
-    list_editable = 'frist_name',
+    list_editable = 'frist_name','show',
     list_display_links = 'last','id',
     ...
 
